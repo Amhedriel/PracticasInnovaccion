@@ -1,5 +1,6 @@
 body {
   background-color: rgba(158, 158, 158, 0.3);
+  font-family: raleway, sans-serif;
 }
 
 .header a {
@@ -10,6 +11,13 @@ body {
 h1 {
   line-height: 2em;
   font-size: 4em;
+}
+
+p {
+  margin: 0%;
+  padding: 0%;
+  font: 1.5em sans-serif;
+
 }
 
 .container {
@@ -32,3 +40,21 @@ h1 {
       display: block;
       padding: 0.5rem 1rem;
     }
+
+.highlight {
+  margin: 0em;
+  padding: 0em;
+  background-color: lightgray;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+.history {
+  margin: 0rem;
+  padding: 0rem;
+  background-color: #ebbe97;
+}
