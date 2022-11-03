@@ -41,11 +41,21 @@
         <label for="leche-condensada">
           <input type="checkbox" name="relleno" value="leche-condensada" id="leche-condensada">
           Leche Condensada
+          
         </label>
         <br>
         <label for="fruta">
           <input type="checkbox" name="relleno" value="fruta" id="fruta">
-          Fruta
+          Fruta: *
+          <label for="frutas">Seleccione una fruta:</label>
+          <select name="frutas">
+            <option value="ananá">Ananá</option>
+            <option value="frutilla">Frutilla</option>
+            <option value="kiwi">Kiwi</option>
+            <option value="cerezas">Cerezas</option>
+            <option value="duraznos">Duraznos</option>
+            <option value="peras">Peras</option>
+          </select>
         </label>
         <br>
         <label for="Crema-de-Chocolate">
@@ -53,29 +63,47 @@
           Crema de Chocolate
         </label>
         <br>
-        <label for="coco">
-          <input type="checkbox" name="relleno" value="coco" id="coco" >
-          Coco
+        <label for="crema-pastelera">
+          <input type="checkbox" name="relleno" value="crema-pastelera" id="crema-pastelera" >
+          Crema Pastelera
         </label>
         <br>
-        <label for="naranja">
-          <input type="checkbox" name="relleno" value="naranja" id="naranja" >
-          Naranja
+        <label for="duraznos-en-álmibar">
+          <input type="checkbox" name="relleno" value="duraznos-en-álmibar" id="duraznos-en-álmibar" >
+          Duraznos en Álmibar
         </label>
         <br>
-        <label for="banana">
-          <input type="checkbox" name="relleno" value="banana" id="banana" >
-          Banana
+        <label for="dulce-de-leche">
+          <input type="checkbox" name="relleno" value="dulce-de-leche" id="dulce-de-leche" >
+          Dulce de Leche
         </label>
         <br>
-        <label for="zanahoria">
-          <input type="checkbox" name="relleno" value="zanahoria" id="zanahoria" disabled >
-          Zanahoria (Sin stock temporalmente)
+        <label for="galletas-trituradas">
+          <input type="checkbox" name="relleno" value="galletas-trituradas" id="galletas-trituradas">
+          Galletas Trituradas *
+          <label for="galletas">Seleccione:</label>
+          <select name="galletas">
+            <option value="vainilla">Vainilla</option>
+            <option value="oreo">Oreo</option>
+            <option value="con-chips">Con Chips</option>
+            <option value="recital">Recital</option>
+            <option value="coco">Coco</option>
+            <option value="jengibre">Jengibre</option>
+          </select>
         </label>
         <br>
-        <label for="limón">
-          <input type="checkbox" name="relleno" value="limón" id="limón" >
-          Limón
+        <label for="mermelada-de">
+          <input type="checkbox" name="relleno" value="mermelada-de" id="mermelada-de" >
+          Mermelada de *
+          <label for="mermelada">Seleccione una:</label>
+          <select name="mermelada">
+            <option value="higo">Higo</option>
+            <option value="frutilla">Frutilla</option>
+            <option value="naranja">Naranja</option>
+            <option value="cerezas">Cerezas</option>
+            <option value="duraznos">Duraznos</option>
+            <option value="membrillo">Membrillo</option>
+          </select>
         </label>
         <br>
         <hr>
@@ -86,16 +114,16 @@
         <fieldset>
           <legend>INFORMACIÓN</legend>
           <div>
-            <label>Seleccione hasta un máximo de 3 sabores diferentes.</label>
+            <label>Seleccione hasta un máximo de 2 sabores diferentes por capa.</label>
             <br>
             <label for="comentario">Comentario</label>
             <br>
-            <textarea name="comentario" id="comentario" cols="70" rows="10"  placeholder="Escriba un comentario u observación para detallar de mejor manera su pedido con este apartado. Máximo 150 caracteres." maxlength="150"></textarea>
+            <textarea name="comentario" id="comentario" cols="70" rows="10"  placeholder="Escriba un comentario u observación para detallar de mejor manera su pedido con este apartado. Máximo 200 caracteres." maxlength="200"></textarea>
           </div>
         </fieldset>
       </form>
       <br>
-      <a href="/HTML/pasteleria/subpaginas/creeSuTorta1.html"><input type="button" value="Confirmar"></a> <span>eh ir a RELLENO</span>
+      <a href="/HTML/pasteleria/subpaginas/creeSuTorta2.html"><input type="button" value="Confirmar"></a> <span>eh ir a la COBERTURA</span>
 
     </div>
 
