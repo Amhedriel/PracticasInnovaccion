@@ -7,3 +7,5 @@ Formatos:
 * [Webp](/HTML/Media/webp/README.md)
 * [Svg](/HTML/Media/svg/README.md)
 
+---
+[*Volver* **&ldca;**](/HTML/README.md "Ir a Readme")

@@ -1,6 +1,7 @@
 # Logos PNG
 
 Logos en formato PNG, debido al soporte de navegadores y su transparencia, útil para redes rociales.
+
 <br>
 <br>
 

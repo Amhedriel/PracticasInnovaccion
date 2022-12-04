@@ -13,3 +13,6 @@ A mi repositorio de prácticas en HTML, empezaré con el listado del contenido (
 ## ***Bonus?*** 
 Veremos XD, si hay suerte... y tiempo.
 
+---
+---
+[*Volver* **&ldca;**](/README.md "Ir a Readme") [*Subir* **&#11165;**](# "Ir al título")

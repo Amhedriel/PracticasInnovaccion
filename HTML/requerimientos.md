@@ -33,7 +33,8 @@ La página debe tener información de la pastelería que es Dirección, Teléfon
 
 ## ***PLAZO 4 DE NOVIEMBRE***
 
-[Siguiente **&#129042;**]( "")
+<br>
 
+---
 ---
 [*Volver* **&ldca;**](/HTML/README.md "Ir a Readme") [*Subir* **&#11165;**](# "Ir al título")
