@@ -1,13 +1,13 @@
 *{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 body {
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
 }
-
 /*header*/
 .header {
   padding: 0;

@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="También añado que no todos los enlaces/links/anclas están operativos asi que si quieren entrar a alguno y no se puede, es porque aún está en construcción y estoy utilizando enlaces muertos.">
   <meta name="author" content="David Amhed Beltrán Rubín de Celis">
+  <link rel="stylesheet" href="/style/styles.css">
   <title>Prácticas Innovacción</title>
 </head>
 <!-- El index
@@ -17,20 +18,20 @@ Logotipo – Indispensable para distinguir tu empresa, puede encontrarse en un b
   Recordatorio:
   Toda pagina web debe iniciar abriendo una etiqueta de html, seguida del titulo de la pagina y su encabezado. -->
   <header>
-    <div class="container">
-      <a href="#" class="logo"><img src="/media/aSuGusto.svg" alt="Construyendo" height="35%" width="35%"></a>
+    <div class="header_container">
+      <h2 class="titulo">Amhedriel</h2>
       <!-- Menu de navegacion-El menu tambien es una parte primordial en una pagina web, en este peque;o tutorial estamos manejando un menu lineal con texto, sin animaciones en donde destacamos la navegacion o hipervinculos hacia otras secciones de esta pagina web.
 El menu de navegacion llevara al cliente hacia otras areas de interes de tu empresa, como galeria de fotos, servicios que ofreces y como contactarte. -->
         <nav class="navigation">          
-        <ul>
-          
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="/HTML/index.html">HTML</a></li>
-          <li><a href="/CSS/index.html">CSS</a></li>
-          <li><a href="index.html">JavaScript</a></li>
-        </ul>
+          <ul class="nav">                 
+            <li><span><a href="index.html" class="home">HOME</a></span></li>
+            <li><span><a href="/HTML/index.html" class="html">HTML</a></span></li>
+            <li><span><a href="/CSS/index.html" class="css">CSS</a></span></li>
+            <li><span><a href="index.html" class="js">JavaScript</a></span></li>
+          </ul>
         </nav>
     </div>
+    <a href="#" class="logo"><img src="/media/aSuGusto.svg" alt="Construyendo" height="35%" width="35%"></a>
   </header>
   <main class="main">
     <!-- Mensaje de bienvenida – Este texto debera ser breve y en el se describira tu empresa, la personalidad de la misma y a que se dedican.
