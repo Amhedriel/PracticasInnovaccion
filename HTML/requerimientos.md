@@ -29,9 +29,9 @@ La página debe tener información de la pastelería que es Dirección, Teléfon
 * Bonus de Rutas (Navegación en la página)
 * Bonus de despliegue (Montar la página en línea con dominio gratuito)
 
-[Requerimientos](blank:#http://www.figma.com/file/d7vk6maSRVWVl1jiVwACwf/Pr%C3%A1ctica-de-Pasteler%C3%ADa?node-id=0%3A1 "Ir a Figma")
+[Requerimientos](https://www.figma.com/file/d7vk6maSRVWVl1jiVwACwf/Pr%C3%A1ctica-de-Pasteler%C3%ADa?node-id=0%3A1 "Ir a Figma")
 
-<a alt="Ir a Figma" href="https://www.figma.com/file/d7vk6maSRVWVl1jiVwACwf/Pr%C3%A1ctica-de-Pasteler%C3%ADa?node-id=0%3A1" target="_blank" >Requerimientos</a>
+<a href="https://www.figma.com/file/d7vk6maSRVWVl1jiVwACwf/Pr%C3%A1ctica-de-Pasteler%C3%ADa?node-id=0%3A1" target="_blank" >Requerimientos</a>
 
 ## ***PLAZO 4 DE NOVIEMBRE***
 
