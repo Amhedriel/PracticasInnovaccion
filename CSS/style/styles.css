@@ -5,6 +5,11 @@ body {
   flex-direction: column;
   margin: 0;
 }
+
+a{
+  text-decoration: none;
+  color:#585858;
+}
 /*header*/
 .header {
   padding: 0;
@@ -73,17 +78,14 @@ nav {
   width: 50vw;
 }
 
-img{
-  position: relative;
-}
-
 .img1 {
   position: relative;
   padding: 0;
   margin: 0;
   z-index: -1;
   width: 50%;
-  top: 0;
+  top: -19px;
+  height: 1020px;
   background: linear-gradient(90deg, #0d99ff, #1261ff);
 }
 
@@ -386,7 +388,8 @@ img{
 
 .enfermera-2{
   position: relative;
-  top: -490px;
+  margin-left: 5px;
+  top: -493px;
   height: 993px;
 }
 
@@ -475,7 +478,8 @@ img{
   color: #1f3e72;
   margin-left: 12.5rem;
   width: 50rem;
-  bottom: -20rem;
+  top: 15rem;
+
 }
 
 .img3 {
@@ -484,8 +488,6 @@ img{
   height: 630px;
   top: 53rem;
   background: linear-gradient(90deg, #0d99ff, #1261ff);
-  background-origin: padding-box; 
-
 }
 
 .enfermero{
@@ -501,13 +503,12 @@ img{
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  top: 700px;
+  top: -900px;
 }
 
 .contact-box {
   display: flex;
   position: relative;
-  bottom: 98.5rem;
   margin-left: 11.5rem;
 }
 
@@ -562,13 +563,19 @@ img{
 }
 
 /*Footer*/
-
+.footer{
+  justify-content: space-between;
+  position: relative;
+  padding: 0;
+  margin:  0;
+  top: -600px;
+}
 .container-footer {
   display: flex;
   justify-content: space-between;
-  position: relative;
-  margin-top: -90rem;
-  top: 750px;
+  position: sticky;
+  margin: 0;
+  bottom: 0;
   background-color: #eef3ff;
   width: 100%;
 }
@@ -619,7 +626,8 @@ td {
 .footer-ultimo{
   position: relative;
   color: #1f3e72;
-  top: 750px;
+  top: 50px;
+  /* top: 750px; */
 }
 
 .reg {
