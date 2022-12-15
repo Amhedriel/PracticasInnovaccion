@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pokedex LaunchX</title>
+	<link rel="stylesheet" href="./style/styles-dist.css">
+	
 </head>
 <body>
-  
+	<h1>Pokedex LaunchX</h1>
+	<!-- Carcasa -->
+	<div class="pokedex">
+		<!-- Pantalla -->
+		<div class="pokeDisplay">
+			<div class="button-red-1">
+			</div>
+			<div class="button-red-2">
+			</div>
+			<div class="button-red-3">
+			</div>
+			<div class="pokePhoto">
+				<img src="./img/PokeballAmhedriel.svg" alt="Pokemon" id="pokeImg" class="image">
+			</div>
+		</div>
+		<!-- Información -->
+		<div class="pokeInfo">
+			<div class="pokeScreen" id="abilities"><span>Habilidades</span></div>
+			<input type="text" class="placeholder" placeholder="Nombre o Nº de Pokemon" id="pokeName" name="pokeName" autofocus>
+			<button onclick="fetchPokemon()" tabindex="abilities">Buscar Pokemon</button>
+		</div>
+		<!-- <div class="pokeInfo">
+			<input type="text" class="placeholder" placeholder="Nombre o Nº de Pokemon" id="pokeName" name="pokeName" autofocus>
+			<button onclick="fetchPokemon()" tabindex="abilities">Buscar Pokemon</button>
+			<div class="pokeScreen" id="abilities"><span>Habilidades</span></div>
+		</div> -->
+	</div>
 </body>
+<footer>
+  <script src="./index.js"></script>
+</footer>
 </html>
