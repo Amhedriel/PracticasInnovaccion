@@ -34,17 +34,18 @@ const fetchPokemon = async () => {
 };
 // pokeTypes
 
-const pokeType = (types) => {
+const pokeType = types => {
 	const pokeType = document.getElementById("types")
 	const typesName = types.map((item) => item.type.name);
 	pokeType.innerHTML = typesName;
-}
+};
 
 // pokeImage
 const pokeImage = (url) => {
 	const pokePhoto = document.getElementById("pokeImg");
 	pokePhoto.src = url;
 };
+
 // pokeData
 const pokeData= (abilites) =>{
 	const pokeAbilities = document.getElementById("abilities");

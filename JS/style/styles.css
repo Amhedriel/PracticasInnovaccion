@@ -1,15 +1,18 @@
 :root{
   --rojo: #ff002a;
   --rojotinto: #db092c;
+  --rojooscuro: #b41010;
   --verde: #50ad5d;
   --celeste: #27aafc;
   --blanco: #ddd;
+  --fondo: #fff;
   --negro: #222;
   --gris: #808080;
   --grisOscuro: #353434;
   --amarillo: #e6e600;
   --verdeclaro: #90ee90;
-  --gradienteRadial: radial-gradient(farthest-side at 30% 40%, #fff 10%, #ffff00 30%, #FCDA00 65%,  #868a08 95%)
+  --gradienteRadial: radial-gradient(farthest-side at 30% 40%, #fff 10%, #ffff00 30%, #FCDA00 65%,  #868a08 95%);
+  --size: 140px;
 }
 
 *{
@@ -17,28 +20,210 @@
   font-family: Roboto, Geneva, Tahoma, sans-serif;
 }
 
-/*carcasa*/
-.curveado{
-  background-color: #fff;
-  position: absolute;
-  width: 45%;
-  top: -10;
 
+/*Esquinas carcasa*/
+.tapa-1{
+  position: absolute;
+  top: 170px;
+  left: 775px;
+  background-color: var(--fondo);
+  height: 160px;
+  width: 163px;
+  padding: 1px;
+  z-index: 20;
 }
+.tapa-2{
+  position: absolute;
+  top: 230px;
+  left: 517px;
+  background-color: var(--rojotinto);
+  height: 160px;
+  width: 125px;
+  padding: 1px;
+  z-index: 21;
+}
+.tapa{
+  position: absolute;
+  top: 180px;
+  left: 517px;
+  width: 422px;
+  height: 200px;
+  z-index: 20;
+  background: 
+    radial-gradient(
+      var(--size) circle at 30% 60%,
+      var(--rojotinto) 50%,
+      transparent 50%
+    ),
+    radial-gradient(
+      var(--size) circle at 61.8% 40%,
+      var(--fondo) 50%,
+      transparent 50%
+    ),
+    linear-gradient(
+      var(--fondo) 50%,
+      transparent 50%
+    ),
+    linear-gradient(
+      var(--rojo) 50%,
+      transparent 50%
+    );
+  background-color: var(--negro) 0.8;
+  /* border: 1px solid; */
+}
+.curveado{
+  position: absolute;
+  top: 205px;
+  left: 38px;
+  width: 460px;
+  height: 125px;
+  z-index: 20;
+  background: 
+    radial-gradient(
+      var(--size) circle at 63.8% 76%,
+      var(--rojotinto) 50%,
+      transparent 50%
+    ),
+    radial-gradient(
+      var(--size) circle at 35.1% 44%,
+      var(--rojo) 50%,
+      transparent 50%
+    ),
+
+    linear-gradient(
+      var(--rojo) 50%,
+      transparent 50%
+    );
+}
+    .curveado-1{
+      position: absolute;
+      top: 180px;
+      left: 38px;
+      background-color: var(--rojo);
+      height: 149px;
+      width: 163px;
+      border-top-left-radius: 53px 50%;
+      padding: 1px;
+      z-index: 20;
+    }
+    .curveado-2{
+      position: absolute;
+      top: 230px;
+      left: 340px;
+      background-color: var(--rojotinto);
+      height: 100px;
+      width: 125px;
+      padding: 1px;
+      z-index: 20;
+    }
+    .curveado-rojo{
+      position: absolute;
+      top: 179px;
+      left: 38px;
+      background-color: var(--rojo);
+      height: 50px;
+      width: 453px;
+      border-top-left-radius: 53px 32px;
+      padding: 1px;
+      z-index: 30;
+      box-shadow: 0 -2px;
+    }
+
 .pokedex {
   position: absolute;
-  top: 150px;
+  margin: 30px;
+  top: 157px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: var(--rojotinto);
   width: 900px;
-  height: 800px;
-  border-radius: 7px;
-  
+  height: 790px;
+  border-radius: 7%;
+  box-shadow:-25px 11px var(--rojooscuro);
 }
 
-/*pantalla*/
+.visagras{
+  content: " ";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 177px;
+  left: 457px;
+  border: 2px solid;
+  border-color: var(--grisOscuro);
+  border-radius: 5em / 2em;
+  height: 817px;
+  width: 60px;
+  background-color: var(--rojo);
+  z-index: 20;
+
+}
+
+    .visagra{
+      position: relative;
+      background-color: var(--rojo);
+      border-top: 1px solid;
+      border-top-left-radius: 5em 2em;
+      border-top-right-radius: 5em 2em;
+      width: 56px;
+      margin: 0;
+      padding: 9px;  
+    }
+
+    .visagra-1{
+      top: 70px;
+    }
+    .visagra-2{
+      top: -20px;
+    }
+    .visagra-3{
+      position: relative;
+      background-color: var(--rojo);
+      top: -159px;
+      border: 1px solid;
+      border-top-right-radius: 10px 2px;
+      border-bottom-left-radius: 10px 2px;
+      padding: 4px;
+      height: 27px;
+      left: 12px;
+    }
+
+    .visagra-5{
+      position: relative;
+      background-color: var(--rojo);
+      bottom: -262px;
+      border: 1px solid;
+      border-top-right-radius: 10px 2px;
+      border-bottom-left-radius: 10px 2px;
+      padding: 4px;
+      height: 26px;
+      left: 12px;
+      z-index: 1;
+    }
+
+    .visagra-6{
+      top: 140px;
+    }
+    .visagra-7{
+      top: 50px;
+    }
+
+    .visagra-8{
+      position: relative;
+      background-color: var(--rojotinto);
+      border: 1px solid var(--negro);
+      border-radius: 5em / 2em;
+      width: 60px;
+      margin: 0;
+      padding: 10px;
+      top: 1px;
+
+    }
+
+/*pantalla izquierda*/
 
 .image{
   width: 150px;
@@ -48,6 +233,7 @@
   position: relative;
   display: flex;
   justify-content: center;
+  top: -50px;
   align-items: center;
   background-color: var(--blanco);
   border-bottom-left-radius: 50px 50px;
@@ -104,7 +290,7 @@
   padding: 1rem;
 }
 
-/* texto */
+/* texto pantalla derecha */
 .pokeInfo{
   display: flex;
   flex-direction: column;
@@ -120,6 +306,7 @@
   font-size: 12px;
 }
 
+/* botones*/
 .buttons-blue{
   padding: 5px;
   display: flex;
@@ -240,9 +427,5 @@
   color: var(--amarillo);
   text-align: center;
 }
-.buscar{
-
-}
-
 
 
