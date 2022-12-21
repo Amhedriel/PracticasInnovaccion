@@ -12,12 +12,18 @@
 	<h1>Pokedex LaunchX</h1>
 	<!-- Carcasa -->
 	<div class="tapa"></div>
-	<div class="tapa-1"></div>
 	<div class="tapa-2"></div>
 	<div class="curveado"></div>
 	<div class="curveado-1"></div>
 	<div class="curveado-2"></div>
-	<div class="curveado-rojo"></div>
+	<div class="curveado-rojo">
+		<div class="led-azul"></div>
+		<div class="led-rojo"></div>
+		<div class="led-amarillo"></div>
+		<div class="led-amarillo-2"></div>
+		<div class="tapa-1"></div>
+		
+	</div>
 	<div class="curveado-rojotinto"></div>
 
 	<div class="pokedex">
@@ -29,7 +35,7 @@
 			</div>
 			<div class="button-red-3">
 			</div>
-
+			
 			<div class="pokePhoto">
 				<img src="./img/PokeballAmhedriel.svg" alt="Pokemon" id="pokeImg" class="image">
 			</div>
@@ -37,25 +43,28 @@
 			<div class="names">
 			</div>
 		</div>
+		<div class="container-pads">
+			<div class="black-button">black</div>
+			<div class="red-button">red</div>
+			<div class="blue-button">blue</div>
+			<div class="cross-pad">pad</div>
+			<div class="green-screen">green</div>
+		</div>
 		<!-- Información -->
 		<div class="pokeInfo">
+
 			<div class="pokeScreen">
 				<span>Tipo:</span>
 				<span class="tipo-1" id="types"></span>
-				<span class="tipo-2"></span>
-			</div>
-			
-			<div class="pokeScreen">
-				<span>Debilidades:</span>
-				<span class="debilidades" id="debilidades"></span>
+				<span class="tipo-2" id="types"></span>
 			</div>
 			<div class="pokeScreen">
-				<span>Habilidades:</span>
-				<span class="types"  id="abilities"></span>
-			</div>
-			<div class="pokeScreen">
-				<span>Stats:</span>
+				<span>Debilidades</span>
 				<span class="stats" id="stats"></span>
+			</div>
+			<div class="pokeScreen">
+				<span>Técnicas:</span>
+				<span class="types"  id="abilities"></span>
 			</div>
 
 			
@@ -84,14 +93,16 @@
 
 			<!-- Pantalla de datos -->
 			<div class="data">
+				<div class="height">Mide</div>
+				<div class="weight">Pesa</div>
 				<input type="text" class="placeholder" placeholder="Pokemon Nombre/Nº" id="pokeName" name="pokeName" autofocus>
 				<button class ="buscar" onclick="fetchPokemon()" tabindex="abilities">Buscar Pokemon</button>
 			</div>
 				
-			<div class="height"></div>
-			<div class="weight"></div>
 
 		</div>
+		<div class="recuadro-1"></div>
+		<div class="recuadro-2"></div>
 	</div>
 	<div class="visagras">
 		<div class="visagra-1 visagra"></div>
