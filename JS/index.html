@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Pokedex LaunchX</title>
 	<link rel="stylesheet" href="./style/styles-dist.css">
-	
+
 </head>
 <body>
 	<h1>Pokedex LaunchX</h1>
@@ -17,6 +17,7 @@
 	<div class="curveado-1"></div>
 	<div class="curveado-2"></div>
 	<div class="curveado-rojo">
+		<div class="white"></div>
 		<div class="led-azul"></div>
 		<div class="led-rojo"></div>
 		<div class="led-amarillo"></div>
@@ -29,6 +30,7 @@
 	<div class="pokedex">
 		<!-- Pantalla -->
 		<div class="pokeDisplay">
+			<div class="speaker"></div>
 			<div class="button-red-1">
 			</div>
 			<div class="button-red-2">
@@ -44,25 +46,31 @@
 			</div>
 		</div>
 		<div class="container-pads">
-			<div class="black-button">black</div>
-			<div class="red-button">red</div>
-			<div class="blue-button">blue</div>
-			<div class="cross-pad">pad</div>
-			<div class="green-screen">green</div>
+			<div class="black-button"></div>
+			<div class="red-button"></div>
+			<div class="blue-button"></div>
+			<div class="cross-pad">
+				<span class="pad-1"></span>
+				<span class="cross-span"></span>
+					<span class="pad-2"></span>
+			</div>
+			<div class="green-screen" id="greenScreen">Nombre Poke
+
+			</div>
 		</div>
 		<!-- Información -->
 		<div class="pokeInfo">
 
-			<div class="pokeScreen">
+			<div class="pokeScreen" id="tipo">
 				<span>Tipo:</span>
 				<span class="tipo-1" id="types"></span>
 				<span class="tipo-2" id="types"></span>
 			</div>
-			<div class="pokeScreen">
+			<div class="pokeScreen" id="debilidades">
 				<span>Debilidades</span>
 				<span class="stats" id="stats"></span>
 			</div>
-			<div class="pokeScreen">
+			<div class="pokeScreen" id="tecnicas">
 				<span>Técnicas:</span>
 				<span class="types"  id="abilities"></span>
 			</div>
@@ -91,12 +99,12 @@
 			</div>
 			<div class="led-yellow"></div>
 
-			<!-- Pantalla de datos -->
-			<div class="data">
-				<div class="height">Mide</div>
-				<div class="weight">Pesa</div>
+			<!-- Pantallas de datos -->
+			<div class="data" id="data">
+				<div class="height" id="mide">Mide</div>
+				<div class="weight" id="pesa">Pesa</div>
 				<input type="text" class="placeholder" placeholder="Pokemon Nombre/Nº" id="pokeName" name="pokeName" autofocus>
-				<button class ="buscar" onclick="fetchPokemon()" tabindex="abilities">Buscar Pokemon</button>
+				<button class ="buscar" id="pokeBuscar" onclick="fetchPokemon()" tabindex="abilities">Buscar Pokemon</button>
 			</div>
 				
 
@@ -116,6 +124,6 @@
 	</div>
 </body>
 <footer>
-  <script src="./index.js"></script>
+	<script src="./index.js"></script>
 </footer>
 </html>

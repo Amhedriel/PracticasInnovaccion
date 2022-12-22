@@ -25,13 +25,19 @@ const fetchPokemon = async () => {
 			let pokeImg = data.sprites.front_default; 
 			let pokeInfo = data.abilities;
 			let pokeTyp = data.types;
+			let altura = alto;
+			let mide = data.height;
 
 			pokeImage(pokeImg);
 			pokeData(pokeInfo);
 			pokeType(pokeTyp);
 			console.log(pokeImg);
 		};
+
+
 };
+
+
 // pokeTypes
 
 const pokeType = types => {
@@ -53,9 +59,9 @@ const pokeData= (abilites) =>{
 	pokeAbilities.innerHTML = abilitiesName;
 };
 
-
-
-
-
-
-
+// decímetros a metros
+function alto () {
+	let decimetros = parseInt();
+	metros = decimetros / 10;
+	return (metros + ' m');
+};

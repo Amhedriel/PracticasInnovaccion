@@ -15,7 +15,12 @@
   --gradienteAmarillo: radial-gradient(farthest-side at 30% 40%, #fff 10%, #ffff00 30%, #FCDA00 65%,  #868a08 95%);
   --gradienteAzul: radial-gradient(farthest-side at 30% 40%, #fff 10%, #5eb1ff 30%, #3575ff 65%,  #1b088a 95%);
   --gradienteRojo: radial-gradient(farthest-side at 30% 40%, #fff 10%, #ff5e5e 30%, #ff0000 65%,  #8a0808 95%);
+  --gradienteBlanco: radial-gradient(farthest-side at 10% 18%, #fff 10%, #ccc 30%, #9c9c9c 65%,  #222d 95%);
+
+  --gradienteLinear: repeating-linear-gradient(#222 0%, #222 10%, #222 10%, #ddd 10%, #ddd 20%);
+
   --size: 140px;
+  --ss: 25px;
 }
 
 *{
@@ -237,7 +242,18 @@
   border-radius: 50%;
   background-image: var(--gradienteAzul);
   z-index: 40;
+}
 
+.white{
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  top: 18px;
+  left: 17px;
+  border: 1px solid;
+  border-radius: 50%;
+  background-image: var(--gradienteBlanco);
+  z-index: 40;
 }
 
 .led-rojo{
@@ -282,6 +298,7 @@
 
 .image{
   width: 150px;
+  border-radius: 15px;
   
 }
 .pokeDisplay{
@@ -334,6 +351,18 @@
   background-color: var(--rojo);
 }
 
+.speaker{
+  position: absolute;
+  /* background-color: var(--rojooscuro); */
+  top: 250px;
+  left: 245px;
+  width: 50px;
+  height: 40px;
+  background-image: var(--gradienteLinear);
+  /* border-top: 2px solid var(--negro);
+  border-bottom: 2px solid var(--negro); */
+}
+
 .pokePhoto{
   display: flex;
   justify-content: center;
@@ -352,11 +381,10 @@
   flex-wrap: wrap;
   position: absolute;
   justify-content: space-between;
-  border: 1px solid var(--negro);
-  height: 250px;
+  height: 230px;
   width: 380px;
-  top: 510px;
-  left: 22px;
+  top: 530px;
+  left: 24px;
 }
 
     .black-button{
@@ -373,7 +401,7 @@
     .blue-button{
       flex-basis: 18%;
       height: 15px;
-      margin: 0 0 7px 0;
+      margin: 20px 0 7px 0;
       border-radius: 10em / 10em;
     }
       .red-button{
@@ -385,7 +413,7 @@
       .blue-button{
         background-color: var(--celeste);
         border: 1px solid var(--gris);
-        box-shadow: 2px -2px 2px var(--celeste),
+        box-shadow: 2px -3px 3px var(--celeste),
         2px -2px 2px var(--negro);
       }
 
@@ -394,25 +422,61 @@
       background-color: var(--verde);
       color:var(--amarillo);
       border-radius: 5px;
-      top: 150px;
+      top: 90px;
       left: 50px;
       width: 150px;
       height: 60px;
       padding: 8px 6px;
       font-size: 12px;
     }
-    .cross-pad{
-      height: 120px;
-      width: 120px;
-      padding: 1px;
-      z-index: 20;
-      background: 
-        linear-gradient(
 
+    .cross-pad{
+      display: flex;
+      align-items: center;
+      height: 120px;
+      right: 40px;
+      width: 40px;
+      margin: 30px 60px 0 0;
+      background:     
+        radial-gradient(
+          var(--ss) circle at 50% 50%,
+          var(--grisOscuro) 50%,
+          transparent 50%
+        ),
+        radial-gradient(
+          28px circle at 50% 50%,
+          var(--negro) 50%,
+          transparent 50%
         );
       background-color: var(--grisOscuro);
+      box-shadow: 3px -3px 3px var(--negro);
 
     }
+      .cross-span{
+        position: center;
+        transform: rotate(90deg);
+        height: 120px;
+        right: 40px;
+        left: 40px;
+        width: 40px;
+      }
+
+      .pad-1,
+      .pad-2{
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        background-color: var(--grisOscuro);
+      }
+      .pad-1{
+        right: 100px;
+        box-shadow: 0 -3px var(--negro);
+      }
+      .pad-2{
+        right: 20px;
+        box-shadow: 3px -3px 3px var(--negro);
+        }
+
 /* texto pantalla derecha */
 .pokeInfo{
   display: flex;
@@ -424,9 +488,9 @@
       background-color: var(--grisOscuro);
       color:var(--amarillo);
       width: 330px;
-      height: 30px;
+      height: 32px;
       padding: 8px 6px;
-      font-size: 12px;
+      font-size: 13px;
     }
 
 /* botones*/
@@ -477,7 +541,7 @@
   position: relative;
   flex-basis: 18%;
   height: 15px;
-  margin: 0 0 7px 0;
+  margin: 10px 0 7px 0;
   content: "";
   background-color: var(--grisOscuro);
   border: 2px solid var(--negro);
@@ -527,14 +591,16 @@
 
 /* Datos */
 .data{
+  position: relative;
   display: flex;
   width: 330px;
+  top: 40px;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
   align-content: space-between;
-  gap: 1px;
+  gap: 5px;
 }
     .placeholder,
     .buscar,
@@ -550,9 +616,12 @@
       background-color: var(--grisOscuro);
       outline: none;
       color: var(--amarillo);
+      /* Recordar que hay una capa transparente encima para generar los márgenes */
+      z-index: 100;
     }
 
     .placeholder{
+      top: 38px;
       text-align: center;
     }
     ::placeholder{
@@ -572,6 +641,7 @@
     }
     .buscar{
       cursor: pointer;
+      top: 38px;
     }
 
 /* Margenes */
@@ -587,11 +657,16 @@
 .recuadro-1{
   left: 12px;
   border-bottom-left-radius: 50px;
+  border-top: 5px outset var(--rojooscuro); 
+  border-left: 5px inset var(--rojooscuro); 
+  border-bottom: 5px outset var(--rojooscuro);
+  border-right: 5px inset var(--rojooscuro);
 }
 .recuadro-2{
   right: 12px;
   border-bottom-right-radius: 50px;
   z-index: 20;
+  border: 5px inset  var(--rojooscuro);
 }
 
 
