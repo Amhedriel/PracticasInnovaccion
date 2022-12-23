@@ -353,14 +353,11 @@
 
 .speaker{
   position: absolute;
-  /* background-color: var(--rojooscuro); */
   top: 250px;
   left: 245px;
   width: 50px;
   height: 40px;
   background-image: var(--gradienteLinear);
-  /* border-top: 2px solid var(--negro);
-  border-bottom: 2px solid var(--negro); */
 }
 
 .pokePhoto{
@@ -371,6 +368,7 @@
   border-style: outset inset;
   border-radius: 5px;
   width: 250px;
+  height: 190PX;
   margin: 1rem;
   padding: 1rem;
 }
@@ -419,7 +417,10 @@
 
     .green-screen{
       position: absolute;
+      text-align: center;
+      align-items: center;
       background-color: var(--verde);
+      /* font-size: 26px; */
       color:var(--amarillo);
       border-radius: 5px;
       top: 90px;
@@ -427,7 +428,6 @@
       width: 150px;
       height: 60px;
       padding: 8px 6px;
-      font-size: 12px;
     }
 
     .cross-pad{

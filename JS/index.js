@@ -25,12 +25,15 @@ const fetchPokemon = async () => {
 			let pokeImg = data.sprites.front_default; 
 			let pokeInfo = data.abilities;
 			let pokeTyp = data.types;
-			let altura = alto;
-			let mide = data.height;
+			let pokeNam = data.name;
+
+			// let altura = alto;
+			// let mide = data.height;
 
 			pokeImage(pokeImg);
 			pokeData(pokeInfo);
 			pokeType(pokeTyp);
+			pokeNameGreen(pokeNam);
 			console.log(pokeImg);
 		};
 
@@ -38,8 +41,15 @@ const fetchPokemon = async () => {
 };
 
 
-// pokeTypes
 
+// pokeName
+const pokeNameGreen = name => {
+	const pokeNameGreen = document.getElementById("name");
+	const pokeNames = name;
+	pokeNameGreen.innerHTML = pokeNames;
+}
+
+// pokeTypes
 const pokeType = types => {
 	const pokeType = document.getElementById("types")
 	const typesName = types.map((item) => item.type.name);
@@ -59,9 +69,12 @@ const pokeData= (abilites) =>{
 	pokeAbilities.innerHTML = abilitiesName;
 };
 
+
+
+
 // decímetros a metros
-function alto () {
-	let decimetros = parseInt();
-	metros = decimetros / 10;
-	return (metros + ' m');
-};
+// function alto () {
+// 	let decimetros = parseInt();
+// 	metros = decimetros / 10;
+// 	return (metros + ' m');
+// };
