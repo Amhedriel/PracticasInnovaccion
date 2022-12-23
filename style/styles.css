@@ -1,5 +1,6 @@
 * {
-  font-family: Verdana, Robotto, Tahoma, sans-serif;
+  font-family: Verdana, Tahoma, sans-serif;
+  box-sizing: border-box;
 }
 body {
   display: flex;
